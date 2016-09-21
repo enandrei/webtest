@@ -15,7 +15,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <plugin>
+  <build>
+    <plugins>
+    	<plugin>
 	<groupId>org.apache.tomcat.maven</groupId>
 	<artifactId>tomcat7-maven-plugin</artifactId>
 	<version>2.2</version>
@@ -24,8 +26,8 @@
 		<server>Tomcat8Server</server>
 		<path>/web</path>
 	</configuration>
-</plugin>
-  <build>
+	</plugin>
+    </plugins>
     <finalName>webtest</finalName>
   </build>
 </project>
