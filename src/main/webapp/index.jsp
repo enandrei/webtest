@@ -4,9 +4,8 @@
 <%
 java.util.Properties prop = new java.util.Properties();
 prop.load(getServletContext().getResourceAsStream("/META-INF/MANIFEST.MF"));
-out.println("Development-Version: " + prop.getProperty("Development-Version"));
-out.println("<BR></BR>");
-out.println("Build-Version: " + prop.getProperty("Build-Version"));
+out.println("<h2>Development-Version: " + prop.getProperty("Development-Version") + "</h2>");
+out.println("<h2>Build-Version: " + prop.getProperty("Build-Version") + "</h2>");
 %>
 </body>
 </html>
