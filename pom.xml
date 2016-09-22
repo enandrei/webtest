@@ -24,6 +24,7 @@
 	<configuration>
 		<url>http://172.17.0.3:8080/manager/text</url>
 		<server>Tomcat8Server</server>
+		<update>true</update>
 		<path>/web</path>
 	</configuration>
 	</plugin>
